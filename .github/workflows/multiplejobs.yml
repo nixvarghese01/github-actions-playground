@@ -22,8 +22,11 @@ jobs:
       needs: first_job
 
       steps:
-      - name: checkout action 
-        run: echo " second job"
+      - name: checkout action
+        uses: actions/checkout@v4
+
+      - name: run second job
+        run: echo "second job"
         
 
 
